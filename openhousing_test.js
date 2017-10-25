@@ -1,3 +1,4 @@
+"use strict";
 const webdriver = require ('selenium-webdriver');
 var firefox = require ('selenium-webdriver/firefox');
 
@@ -24,8 +25,9 @@ console.log('searchbar');*/
 driver.findElement(webdriver.By.className("last-search-wrapper")).click();
 console.log("searchbox");
 
-/*Select Locality from Popular cities*/
+/*Select Locality from Popular cities and Search*/
 driver.findElement(webdriver.By.className("item")).click();
+driver.findElement(webdriver.By.className("search-initiator-btn")).click();
 
 
 
