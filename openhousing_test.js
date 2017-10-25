@@ -9,18 +9,16 @@ var driver = new webdriver.Builder()
 driver.get("https://www.housing.com");
 console.log('launched housing');
 
-/*select any city*/
-var cityselect = driver.findElement(webdriver.By.xpath(".//*[@id='header']/header/div[1]/div[2]/div/div/span/a[3]/span/span[1]")).click();
-console.log('city hyb');
+/*select a city
+driver.findElement(webdriver.By.xpath(".//*[@id='header']/header/div[1]/div[2]/div/div/span/a[3]/span/span[1]")).click();*/
+driver.findElement(webdriver.By.className("city-select-image mumbai")).click();
+console.log('city Mum');
 
-/*click on searchbar*/
-var searchbar = driver.findElement(webdriver.By.xpath(".//*[@id='home-page']/div/div[2]/div[1]/div/div/div/div[1]/div/span")).click();
-console.log('srchbar');
-
-
-/*enter / type locality name*/
-/*var enterlocalityname = driver.findElement(webdriver.By.className("placeholder")).click();
-console.log('type locality');*/
+/*click on searchbar
+driver.findElement(webdriver.By.xpath(".//*[@id='home-page']/div/div[2]/div[1]/div/div/div/div[1]/div/span")).click();
+console.log('searchbar');*/
+driver.findElement(webdriver.By.className("last-search-wrapper")).click();
+console.log("searchbox");
 
 
 
