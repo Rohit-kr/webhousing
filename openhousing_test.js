@@ -24,6 +24,8 @@ console.log('searchbar');*/
 driver.findElement(webdriver.By.className("last-search-wrapper")).click();
 console.log("searchbox");
 
+/*Select Locality from Popular cities*/
+driver.findElement(webdriver.By.className("item")).click();
 
 
 
